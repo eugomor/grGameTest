@@ -1,0 +1,12 @@
+<div class="absolute-center">
+  
+<div class="module"  [ngStyle]="{'background-color':getGameResult().winnerBall.color}" >
+  <span>{{getGameResult().winnerBall.id}}</span>
+</div>
+<div>
+  <span>{{getGameResult().message}}</span>
+</div>
+<div>
+  <span *ngIf="getGameResult().profit!=0">The profit earned on this winner Bet have been: {{getGameResult().profit}}€</span>
+</div>
+</div>

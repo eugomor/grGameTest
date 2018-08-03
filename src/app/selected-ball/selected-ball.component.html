@@ -1,0 +1,13 @@
+<div class="compSelectedBalls">
+<div *ngIf="selectedBallService.selectedBalls.length" class="grid grid-pad" >
+
+    
+    <div *ngFor='let selectedBall of selectedBallService.selectedAndNotBalls' class="col-1-4">
+            
+    <div  class="module"  [ngStyle]="{'background-color':selectedBallService.notUndefined(selectedBall).color}">  {{selectedBallService.notUndefined(selectedBall).id}} </div>
+    
+</div> 
+    
+    
+  </div>
+</div>

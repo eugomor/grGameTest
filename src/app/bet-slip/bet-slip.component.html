@@ -1,0 +1,14 @@
+
+
+<div class="selected-balls">
+<app-selected-ball></app-selected-ball>
+<div class="input-w">
+    <label class="input-w">{{selectedBallService.getLength()}}X</label>
+         <input [(ngModel)]="betMoney" placeholder="money"/>
+    
+  </div>
+  </div>
+<h3>Total: {{setBet()}}€</h3>
+<div  (click)="placeBet()" class="placebetbutton">
+<a>Place Bet</a>
+</div>

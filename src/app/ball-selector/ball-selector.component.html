@@ -1,0 +1,23 @@
+
+
+<div class="top">
+<div  class="grid grid-pad"   >
+  <a  *ngFor="let ball of balls" class="col-1-4"  routerLink="/detail/{{ball.id}}" >
+    <div class="module"  [ngStyle]="{'background-color':ball.color}" >
+      <h3>{{ball.id}}</h3>
+      
+    </div>
+  
+
+  </a>
+  </div>
+  <div class="down"> 
+    <a class="clear"
+        (click)="ballService.selectedBallService.clear()">Clear Selection</a>
+      </div>
+</div>
+
+
+
+
+  

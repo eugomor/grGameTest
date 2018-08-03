@@ -1,0 +1,11 @@
+<div *ngIf="ball">
+
+    <h2>{{ball.color | uppercase}} Details</h2>
+    <div><span>id: </span>{{ball.id}}</div>
+    <div>
+      <label>color:
+        <input [(ngModel)]="ball.color" placeholder="color"/>
+      </label>
+    </div>
+  
+  </div>

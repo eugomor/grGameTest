@@ -1,0 +1,72 @@
+/* Ball-selector.Component's private CSS styles */
+[class*='col-'] {
+    float: left;
+    padding-right: 1px;
+    padding-bottom: 10px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center; margin-bottom: 0;
+  }
+  h4 {
+    position: relative;
+  }
+  .grid {
+    margin: 0;
+    margin-left: 50px;
+  }
+  .col-1-4 {
+    width: 6%;
+  }
+  .module {
+    padding: 1px;
+    text-align: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #607d8b;
+    
+  }
+  .module:hover {
+    background-color: #058acc;
+    cursor: pointer;
+    color: #eee;
+  }
+  .grid-pad {
+    padding: 10px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }
+  .absolute-center {
+    margin: auto;
+    padding:2px;
+    position: absolute;
+    top: 25%; left: 25%; bottom: 0; right: 0;
+  }

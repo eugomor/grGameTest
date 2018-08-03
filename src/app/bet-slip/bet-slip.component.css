@@ -1,0 +1,127 @@
+/* Ball-selector.Component's private CSS styles */
+
+[class*='col-'] {
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right:10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center; margin-bottom: 0;
+  }
+  h4 {
+    position: relative;
+  }
+  .grid {
+    margin: 10px;
+  }
+  .col-1-4 {
+    width: 30%;
+  }
+  .placebetbutton {
+    font-family: Arial;
+background-color: lightblue;
+margin: 0 auto;
+width: 98%;
+height: 50px;
+padding:10px;
+text-align: center;
+font-size: 25px;
+cursor: pointer;
+
+  }
+  .module {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    max-height: 120px;
+    min-width: 120px;
+    background-color: #607d8b;
+    border-radius: 2px;
+  }
+  .module:hover {
+    background-color: #eee;
+    cursor: pointer;
+    color: #607d8b;
+  }
+  .grid-pad {
+    padding: 20px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }
+  /* BallDetailComponent's private CSS styles */
+label {
+ text-align: center;
+padding-top: .5em;
+  border:2px;
+   font-size: 16px;
+  display: inline-block;
+  width: 3em;
+  height: 2em;
+  margin: .5em 0;
+  background-color: #607d8b;
+  color: rgb(49, 58, 63);
+  
+  font-weight: bold;
+}
+input {
+  
+ height: 2em;
+  font-size: 16px;
+  padding-left: .4em;
+}
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+
+.placebetbutton:hover {
+  background-color: #cfd8dc;
+}
+
+.input-w label, .input-w input {
+ 
+
+  position: relative;
+  top: 25px;
+ 
+  display: inline-block;
+  vertical-align: middle;    
+}
+.selected-balls{
+  padding-left:25%; 
+  width:99%;
+  height:200px; 
+  background-color:white;
+vertical-align:middle;
+  position:relative;
+}
